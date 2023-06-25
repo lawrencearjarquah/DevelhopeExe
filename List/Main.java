@@ -16,7 +16,7 @@ Print the content of kingsOfRomeArray*/
 public class Main {
     public static void main(String[] args) {
         String[] list = {"Milano","Roma","Napoli"};
-        final List<String> cityNames = Arrays.asList(list);
+        final List<String> cityNames = new ArrayList<>(Arrays.asList(list));
         try{
             cityNames.add("Genova");
         }catch (Exception exc){
