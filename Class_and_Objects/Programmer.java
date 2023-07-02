@@ -18,6 +18,14 @@ public class Programmer {
     int age;
     boolean wearGlasses;
 
+    public  Programmer(String name,int age, boolean wearGlasses){
+        this.name = name;
+        this.age = age;
+        this.wearGlasses = wearGlasses;
+
+
+    }
+
     public void drinkCoffee(){
         System.out.println("Espresso is the secret!");
 
@@ -28,10 +36,10 @@ public class Programmer {
 
     }
 
-    public void hasGlasses(boolean wearGlasses){
+    public void hasGlasses(){
         System.out.println(" Is " + name + " wearing glasses?");
 
-        if(wearGlasses == true){
+        if(wearGlasses){
             System.out.println("Yes " + name + " is wearing glasses");
         }
         else{
